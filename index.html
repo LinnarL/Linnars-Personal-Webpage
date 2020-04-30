@@ -9,146 +9,120 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+    <!-- Custom Font CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="custom_font.css" rel="stylesheet">
     <title>Linnar's Personal Page</title>
+    <!-- Fontawesome Icon Kit-->
+    <script src="https://kit.fontawesome.com/b340ceacc2.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div style="background-image: content_CC0/background_large_blur.jpg;" ></div>
-    <div class="container"
-        style="background: white;">
-        <div class="container p-3">
-            <h1 class="text-center">LINNAR LINNARSSON</h1>
-            <h2 class="text-center">A showcase of personal, work and education-related projects.</h2>
-        </div>
+<body style="background: #ffffff;">
+    <div style="background-image: content_CC0/background_large_blur.jpg;"></div>
+    <nav class="navbar navbar-dark bg-primary">
+        <a class="navbar-brand " href="#">Linnar Linnarsson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/projects.html">My Projects</a>
+                </li>
+            </ul>
+    </nav>
+    <div class="container border" style="background:#ffffff;">
         <!-- Limit width of page, as to not spread out over full width and end up unreadable -->
-        <div class="container">
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <div class=" card h-100">
-                        <img src="content_CC0/projects/chassis/chassis_main_square.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Compact PC Case</h5>
-                            <p class="card-text">In an effort to reduce the footprint of my PC at the time, I designed
-                                and printed the parts to mount my hardware in a frame, constructed out of MakerBeam
-                                aluminium extrusion.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
-                    </div>
+        <div class="resume row">
+            <!--Start of main content of page-->
+            <div class="resume_left col-4">
+                <div class="resume_profile">
+                    <img src="./content_CC0/profile.jpg" alt="profile_picture" width="100%">
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/engraving/engraving_main_square.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Engraving on acrylic</h5>
-                            <p class="card-text">A design traced from images of a detective's badge in the TV-show "The
-                                Expanse". Engraved using a Nomad 883 CNC mill.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
+                <div class="border">
+                    <!--Content -->
+                    <div class="border">
+                        <h2>Linnar Linnarsson</h2>
+                        <p> <i class="fas fa-home"></i> Vindragarvägen 12, Stockholm, Sweden</p>
+                        <p> <i class="fas fa-phone"></i> +46733429152</p>
+                        <p> <i class="fas fa-envelope"></i> linnar.linnarsson@gmail.com</p>
+                        <p> <i class="fas fa-desktop"></i> linnarsson.com</p>
                     </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/flowcell/flowcell_main_square.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Custom flow cell</h5>
-                            <p class="card-text">An early proof-of-concept of what later evolved into a bigger project
-                                leading to my employment at SciLifeLab.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
+                    <div class="border">
+                        resume_skills
+                    </div>
+                    <div class="border">
+                        resume_social
                     </div>
                 </div>
             </div>
+            <div class="resume_right col-8">
+                <div class="border">
+                    <h2><strong>About Me</strong></h2>
+                    <p>I am currently a first-year student at KTH Royal Institute of Technology in the Mechanical
+                        Engineering programme. On my free time, I enjoy the outdoors, analog and digital photography, as
+                        well as the Stockholm Makerspace where many of my personal engineering projects are worked on.
+                    </p>
+                </div>
+                <div class="border">
+                    <h2><strong>Employment</strong></h2>
+                    <dl class="row">
+                        <dt class="col-sm-4">Jan. 2019 - Dec. 2019</dt>
+                        <dd class="col-sm-8">
+                            <p>Science for Life Laboratory, Stockholm Sweden.</p>
+                            <p><i>Genomics Group (full time first ~7 months)</i></p>  
+                        </dd>
 
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/garduino/garduino_main_square.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
-                    </div>
+                        <dt class="col-sm-4">Sept. 2018 - Dec. 2018</dt>
+                        <dd class="col-sm-8">
+                            <p>Chan Zuckerberg Biohub, San Francisco USA.</p>
+                            <p><i>Internship, Bioengineering Team</i></p>
+                        </dd>
+                        <dt class="col-sm-4">July 2017</dt>
+                        <dd class="col-sm-8">
+                            <p>Stockholm City Council</p>
+                            <p><i>Work Experience, Parks service.</i></p>
+                        </dd>
+                    </dl>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/greenhouse/greenhouse_main_square.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
-                    </div>
+                <div class="border">
+                    <h2><strong>Education</strong></h2>
+                    <dl class="row">
+                        <dt class="col-sm-4"> Sept. 2019 - Present</dt>
+                        <dd class="col-sm-8">
+                            <p>KTH Royal Institute of Technology, Stockholm Sweden.</p>
+                            <p><i>Mechanical Engineering</i></p>
+                        </dd>
+                        <dt class="col-sm-4">Sept. 2018 - Dec. 2018</dt>
+                        <dd class="col-sm-8">
+                            <p>Foothill College, California USA</p>
+                            <p><i>Environmental Biology (BIOL F009)</i></p>
+                            <p><i>Environmental Biology Lab (BIOL F009L)</i></p>
+                            <p><i>Intro to Engineering (ENGR 10)</i></p>
+                        </dd>
+                        <dt class="col-sm-4">Sept. 2018 - Dec. 2018</dt>
+                        <dd class="col-sm-8">
+                                <p>Stanford University, California USA</p>
+                                <p><i>Creating and Building Websites (CS21)</i></p>
+                        </dd>
+                        <dt class="col-sm-4">Aug. 2015 - June 2018</dt>
+                        <dd class="col-sm-8">
+                                <p>Thorildsplan High School, Stockholm</p>
+                                <p><i>Engineering Technology (TE)</i></p>
+                        </dd>
+                    </dl>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/laser_piano/laserpiano_main_square.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/webpage/webpage_main_square.png" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">This webpage!</h5>
-                            <p class="card-text"></p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/ruben/ruben_main_square.jpg" class="card-img-top" alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <img src="content_CC0/projects/ultimaker/ultimaker_main_square.jpg" class="card-img-top"
-                            alt="...">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary mt-auto">More information</a>
-                        </div>
-                    </div>
+                <div class="border">
+                    <h2><strong>Hobbies</strong></h2>
                 </div>
             </div>
         </div>
-    </div>
+        <!--End of main content of page-->
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
