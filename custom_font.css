@@ -8,7 +8,11 @@ i.fas, i.fab {
   padding: 0.5em 0.6em;
 
 }
-
+/* 
 .border{
   border-style: none !important;
+} */
+
+.border-wide{
+  border-width:3px !important;
 }
